@@ -6,7 +6,7 @@ Jayfound is a portfolio-first, credential-blind hiring discovery platform. It su
 
 Built for Hack the North 2026.
 
-**Live demo:** jayfound.vercel.app
+**Live demo:** [jayfound.vercel.app](https://jayfound.vercel.app)
 
 ## The problem
 
@@ -40,7 +40,7 @@ The ranking is a plain server-side weighted calculation, recomputed on read. The
 ## Tech stack
 
 - **Next.js**: frontend and API routes in one repo and one language
-- **Supabase**: Postgres database, auth, and file storage (video, code, and photo uploads)
+- **Supabase**: Postgres database and file storage (video, code, and photo uploads)
 - **Vercel**: hosting
 
 A deliberately small stack with few moving parts, so the effort went into the portfolio staging UI and the ranking logic rather than infrastructure. There is no AI in this project; grading is deterministic.
@@ -50,7 +50,7 @@ A deliberately small stack with few moving parts, so the effort went into the po
 Requirements: Node.js 18+ and a Supabase project.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/jayfound.git
+git clone https://github.com/sarah-vanvelzer/jayfound.git
 cd jayfound
 npm install
 cp .env.example .env.local
