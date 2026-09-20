@@ -20,10 +20,6 @@ Built for Hack the North 2026.
   <img src="docs/candidates.png" width="700" alt="Recruiter view with skill filters" />
 </p>
 
-<p align="center">
-  <em>Portfolio Hub, how ranking works, and the puzzle arcade (top), and the recruiter view (bottom)</em>
-</p>
-
 ## The problem
 
 Hiring pipelines filter on degrees, resume polish, English fluency, and proximity to the right networks. They don't filter on whether someone can actually build. Talented self-taught builders get lost before anyone sees their work.
