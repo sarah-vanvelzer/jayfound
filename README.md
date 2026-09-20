@@ -10,28 +10,19 @@ Built for Hack the North 2026.
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/project.png" alt="Portfolio Hub" />
-      <br /><em>Portfolio Hub: a project broken into stages</em>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/candidates.png" alt="Recruiter view with skill filters" />
-      <br /><em>Recruiter view: ranked and filterable by skill</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/ranking.png" alt="How ranking works" />
-      <br /><em>How ranking works: portfolio, then puzzles, then mentors</em>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/puzzle.png" alt="Puzzle Arcade" />
-      <br /><em>Puzzle Arcade: optional, deterministically graded</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/project.png" height="380" alt="Portfolio Hub: a project broken into stages" />
+  <img src="docs/ranking.png" height="380" alt="How ranking works" />
+  <img src="docs/puzzle.png" height="380" alt="Puzzle Arcade" />
+</p>
+
+<p align="center">
+  <img src="docs/candidates.png" width="700" alt="Recruiter view with skill filters" />
+</p>
+
+<p align="center">
+  <em>Portfolio Hub, how ranking works, and the puzzle arcade (top), and the recruiter view (bottom)</em>
+</p>
 
 ## The problem
 
