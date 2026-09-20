@@ -8,6 +8,28 @@ Built for Hack the North 2026.
 
 **Live demo:** [jayfound.vercel.app](https://jayfound.vercel.app)
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/project.png" width="600" alt="Portfolio Hub: a VEX robotics project broken into stages" />
+  <br /><em>Portfolio Hub: a project broken into start, rough, final, and lessons learned</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/candidates.png" width="700" alt="Recruiter view with skill filters" />
+  <br /><em>Recruiter view: ranked candidates, filterable by skill</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/ranking.png" width="600" alt="How ranking works" />
+  <br /><em>How ranking works: portfolio depth over puzzles over mentor endorsements</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/puzzle.png" width="450" alt="Puzzle Arcade" />
+  <br /><em>Puzzle Arcade: optional, deterministically graded</em>
+</p>
+
 ## The problem
 
 Hiring pipelines filter on degrees, resume polish, English fluency, and proximity to the right networks. They don't filter on whether someone can actually build. Talented self-taught builders get lost before anyone sees their work.
