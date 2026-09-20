@@ -32,7 +32,7 @@ The ranking is the thesis of the project:
 | Signal | Weight |
 | --- | --- |
 | Portfolio depth | Highest |
-| Puzzle performance | Tiebreaker / discovery signal |
+| Puzzle performance | Tiebreaker/discovery signal |
 | Mentor endorsements | Lowest, supplementary |
 
 The ranking is a plain server-side weighted calculation, recomputed on read. There is no ML model and no scoring service, by design. Puzzle scores can boost visibility but never outweigh demonstrated work.
@@ -68,8 +68,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 | Variable | Description |
 | --- | --- |
-| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Your Supabase publishable (anon) key |
+| `NEXT_PUBLIC_SUPABASE_URL` | (https://fznazkaawargpddvzlwg.supabase.co) |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | sb_publishable_U6dsKiA1p2xM_AtF1HVlUA_hM5jdgWx |
 
 ## Scope
 
