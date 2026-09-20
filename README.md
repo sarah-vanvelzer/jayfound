@@ -10,14 +10,26 @@ Built for Hack the North 2026.
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/project.png" height="380" alt="Portfolio Hub: a project broken into stages" />
-  <img src="docs/ranking.png" height="380" alt="How ranking works" />
-  <img src="docs/puzzle.png" height="380" alt="Puzzle Arcade" />
-</p>
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/project.png" width="100%" alt="Portfolio Hub: a project broken into stages" /><br />
+      <sub><b>Portfolio Hub</b> — a project broken into stages</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/ranking.png" width="100%" alt="How ranking works" /><br />
+      <sub><b>Ranking</b> — how the weighted score works</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/puzzle.png" width="100%" alt="Puzzle Arcade" /><br />
+      <sub><b>Puzzle Arcade</b> — discovery mechanic</sub>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="docs/candidates.png" width="700" alt="Recruiter view with skill filters" />
+  <img src="docs/candidates.png" width="800" alt="Recruiter view with skill filters" /><br />
+  <sub><b>Candidates</b> — recruiter view with skill filters</sub>
 </p>
 
 ## The problem
