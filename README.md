@@ -10,25 +10,28 @@ Built for Hack the North 2026.
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/project.png" width="600" alt="Portfolio Hub: a VEX robotics project broken into stages" />
-  <br /><em>Portfolio Hub: a project broken into start, rough, final, and lessons learned</em>
-</p>
-
-<p align="center">
-  <img src="docs/candidates.png" width="700" alt="Recruiter view with skill filters" />
-  <br /><em>Recruiter view: ranked candidates, filterable by skill</em>
-</p>
-
-<p align="center">
-  <img src="docs/ranking.png" width="600" alt="How ranking works" />
-  <br /><em>How ranking works: portfolio depth over puzzles over mentor endorsements</em>
-</p>
-
-<p align="center">
-  <img src="docs/puzzle.png" width="450" alt="Puzzle Arcade" />
-  <br /><em>Puzzle Arcade: optional, deterministically graded</em>
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/project.png" alt="Portfolio Hub" />
+      <br /><em>Portfolio Hub: a project broken into stages</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/candidates.png" alt="Recruiter view with skill filters" />
+      <br /><em>Recruiter view: ranked and filterable by skill</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/ranking.png" alt="How ranking works" />
+      <br /><em>How ranking works: portfolio, then puzzles, then mentors</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/puzzle.png" alt="Puzzle Arcade" />
+      <br /><em>Puzzle Arcade: optional, deterministically graded</em>
+    </td>
+  </tr>
+</table>
 
 ## The problem
 
