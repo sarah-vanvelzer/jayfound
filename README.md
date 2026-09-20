@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jayfound
 
-## Getting Started
+**Demonstrated work, ranked fairly, found by the people who need it.**
 
-First, run the development server:
+Jayfound is a portfolio-first, credential-blind hiring discovery platform. It surfaces self-taught technical talent that recruiters would never find by resume, starting with one builder in Jinja, Uganda.
+
+Built for Hack the North 2026.
+
+**Live demo:** [ADD YOUR VERCEL URL HERE]
+
+## The problem
+
+Hiring pipelines filter on degrees, resume polish, English fluency, and proximity to the right networks. They don't filter on whether someone can actually build. Talented self-taught builders get lost before anyone sees their work.
+
+Our insight: **process is a better signal than pedigree, and it's verifiable.**
+
+## What it does
+
+### Portfolio Hub
+Builders break any project down into stages: **start → rough version → final → lessons learned**. Projects can be staged retroactively, so something built years before the platform existed still counts. This captures reasoning and iteration, not just a finished artifact.
+
+### Puzzle Arcade
+An optional set of culture-fair, nonverbal reasoning puzzles (pattern completion, odd-one-out, sequences, grid logic), graded deterministically. Skipping it doesn't hide anyone. It just means their portfolio carries the full weight.
+
+### Recruiter view
+Recruiters browse a ranked list and filter by skill tag. They never filter by raw puzzle score.
+
+## The ranking model
+
+The ranking is the thesis of the project:
+
+| Signal | Weight |
+| --- | --- |
+| Portfolio depth | Highest |
+| Puzzle performance | Tiebreaker / discovery signal |
+| Mentor endorsements | Lowest, supplementary |
+
+The ranking is a plain server-side weighted calculation, recomputed on read. There is no ML model and no scoring service, by design. Puzzle scores can boost visibility but never outweigh demonstrated work.
+
+## Tech stack
+
+- **Next.js**: frontend and API routes in one repo and one language
+- **Supabase**: Postgres database, auth, and file storage (video, code, and photo uploads)
+- **Vercel**: hosting
+
+A deliberately small stack with few moving parts, so the effort went into the portfolio staging UI and the ranking logic rather than infrastructure. There is no AI in this project; grading is deterministic.
+
+## Running locally
+
+Requirements: Node.js 18+ and a Supabase project.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/jayfound.git
+cd jayfound
+npm install
+cp .env.example .env.local
+```
+
+Fill in `.env.local` with your Supabase project's URL and publishable key, then:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Description |
+| --- | --- |
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Your Supabase publishable (anon) key |
 
-## Learn More
+## Scope
 
-To learn more about Next.js, take a look at the following resources:
+This is a hackathon prototype, built solo. Auth, payments, and mentor verification were left out deliberately so the core ideas (staged portfolios and the ranking model) could be built well.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What's next
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- AI-assisted grading for open-ended reasoning tasks
+- Anti-cheating and proctoring as usage scales
+- Multi-language support
+- Expansion beyond Jinja to other resource-constrained maker communities
+- A cold-start pilot: a named cohort from the Jinja hackerspace and coaches, an anchor recruiter reviewing the first ranked list, and mentor endorsements tied to real, verifiable names and organizations
