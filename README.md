@@ -6,7 +6,7 @@ Jayfound is a portfolio-first, credential-blind hiring discovery platform. It su
 
 Built for Hack the North 2026.
 
-**Live demo:** [ADD YOUR VERCEL URL HERE]
+**Live demo:** jayfound.vercel.app
 
 ## The problem
 
@@ -56,7 +56,7 @@ npm install
 cp .env.example .env.local
 ```
 
-Fill in `.env.local` with your Supabase project's URL and publishable key, then:
+Fill in `.env.local` with your own Supabase project's URL and publishable key, then:
 
 ```bash
 npm run dev
@@ -68,8 +68,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 | Variable | Description |
 | --- | --- |
-| `NEXT_PUBLIC_SUPABASE_URL` | (https://fznazkaawargpddvzlwg.supabase.co) |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | sb_publishable_U6dsKiA1p2xM_AtF1HVlUA_hM5jdgWx |
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL, e.g. `https://<project-ref>.supabase.co` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Your Supabase publishable key (starts with `sb_publishable_`) |
 
 ## Scope
 
